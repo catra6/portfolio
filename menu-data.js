@@ -4,44 +4,44 @@ window.XMB_MENU_DATA = {
   ICON_THEME: 'vista',
   ICON_MAPS: {
     default: {
-      design: 'icons/photos.png',
-      civil: 'icons/videos.png',
-      electronics: 'icons/documents.png',
-      education: 'icons/system.png',
-      profile: 'icons/profile.png',
-      folder: 'icons/folder.png'
+      design: 'icons/folder025.ico',
+      civil: 'icons/folder011.ico',
+      electronics: 'icons/folder040.ico',
+      education: 'icons/folder032.ico',
+      profile: 'icons/folder015.ico',
+      folder: 'icons/folder001.ico'
     },
     vista: {
-      design: 'icons/windows-vista-icons/Windows Vista Icons/Folder025.ico',
-      civil: 'icons/windows-vista-icons/Windows Vista Icons/Folder011.ico',
-      electronics: 'icons/windows-vista-icons/Windows Vista Icons/Folder040.ico',
-      education: 'icons/windows-vista-icons/Windows Vista Icons/Folder032.ico',
-      profile: 'icons/windows-vista-icons/Windows Vista Icons/Folder015.ico',
-      folder: 'icons/windows-vista-icons/Windows Vista Icons/Folder001.ico'
+      design: 'icons/folder025.ico',
+      civil: 'icons/folder011.ico',
+      electronics: 'icons/folder040.ico',
+      education: 'icons/folder032.ico',
+      profile: 'icons/folder015.ico',
+      folder: 'icons/folder001.ico'
     }
   },
   CUSTOM_FOLDER_ICONS: {
     default: {
-      '4_0': 'icons/windows-vista-icons/Windows Vista Icons/C&M036.ico',
-      '4_1': 'icons/windows-vista-icons/Windows Vista Icons/C&M005.ico',
-      '4_2': 'icons/system.png'
+      '4_0': 'icons/cm036.ico',
+      '4_1': 'icons/cm005.ico',
+      '4_2': 'icons/write011.ico'
     },
     vista: {
-      '0_0': 'icons/windows-vista-icons/Windows Vista Icons/Media011.ico',
-      '0_1': 'icons/windows-vista-icons/Windows Vista Icons/Media001.ico',
-      '0_2': 'icons/windows-vista-icons/Windows Vista Icons/Display001.ico',
-      '1_0': 'icons/windows-vista-icons/Windows Vista Icons/H&D043.ico',
-      '1_1': 'icons/windows-vista-icons/Windows Vista Icons/CP001.ico',
-      '1_2': 'icons/windows-vista-icons/Windows Vista Icons/KB001.ico',
-      '2_0': 'icons/windows-vista-icons/Windows Vista Icons/CP005.ico',
-      '2_1': 'icons/windows-vista-icons/Windows Vista Icons/App001.ico',
-      '2_2': 'icons/windows-vista-icons/Windows Vista Icons/Clock001.ico',
-      '3_0': 'icons/windows-vista-icons/Windows Vista Icons/Cert001.ico',
-      '3_1': 'icons/windows-vista-icons/Windows Vista Icons/File001.ico',
-      '3_2': 'icons/windows-vista-icons/Windows Vista Icons/Disc001.ico',
-      '4_0': 'icons/windows-vista-icons/Windows Vista Icons/User007.ico',
-      '4_1': 'icons/windows-vista-icons/Windows Vista Icons/Net010.ico',
-      '4_2': 'icons/windows-vista-icons/Windows Vista Icons/Write011.ico',
+      '0_0': 'icons/media011.ico',
+      '0_1': 'icons/media001.ico',
+      '0_2': 'icons/display001.ico',
+      '1_0': 'icons/hd043.ico',
+      '1_1': 'icons/cp001.ico',
+      '1_2': 'icons/kb001.ico',
+      '2_0': 'icons/cp005.ico',
+      '2_1': 'icons/app001.ico',
+      '2_2': 'icons/clock001.ico',
+      '3_0': 'icons/cert001.ico',
+      '3_1': 'icons/file001.ico',
+      '3_2': 'icons/disc001.ico',
+      '4_0': 'icons/user007.ico',
+      '4_1': 'icons/net010.ico',
+      '4_2': 'icons/write011.ico',
     }
   },
   FOLDER_ITEMS: {
@@ -50,19 +50,19 @@ window.XMB_MENU_DATA = {
         title: { en: 'demoreel 2026', es: 'demostración 2026', de: 'demoreel 2026' },
         desc: { en: 'post-production & vfx compilation', es: 'compilación de postproducción y vfx', de: 'postproduktion & vfx kompilation' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/Media011.ico'
+        img: 'icons/media011.ico'
       },
       {
         title: { en: 'branding intro', es: 'introducción de marca', de: 'branding intro' },
         desc: { en: 'after effects logo animation', es: 'animación de logo en after effects', de: 'after effects logoanimation' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/Media001.ico'
+        img: 'icons/media001.ico'
       },
       {
         title: { en: 'interactive promo', es: 'promo interactiva', de: 'interaktive promo' },
         desc: { en: 'html5 / canvas advertising snippet', es: 'fragmento publicitario de html5 / canvas', de: 'html5 / canvas werbe-snippet' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/Display001.ico'
+        img: 'icons/display001.ico'
       }
     ],
     '0_1': [
@@ -70,13 +70,13 @@ window.XMB_MENU_DATA = {
         title: { en: 'character cycle', es: 'ciclo de personaje', de: 'character cycle' },
         desc: { en: 'rigid body physics walk test', es: 'prueba de caminata de física de cuerpo rígido', de: 'starrkörperphysik-gehtest' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/Media001.ico'
+        img: 'icons/media001.ico'
       },
       {
         title: { en: 'kinetic type', es: 'tipografía cinética', de: 'kinetische typografie' },
         desc: { en: 'typography layout and styling', es: 'diseño y estilo de tipografía', de: 'typografie-layout und styling' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/Display001.ico'
+        img: 'icons/display001.ico'
       }
     ],
     '0_2': [
@@ -84,7 +84,7 @@ window.XMB_MENU_DATA = {
         title: { en: 'screencaps v1', es: 'capturas v1', de: 'screencaps v1' },
         desc: { en: 'portfolio landing preview', es: 'vista previa de página de portafolio', de: 'portfolio-landing-vorschau' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/Display001.ico'
+        img: 'icons/display001.ico'
       }
     ],
     '1_0': [
@@ -92,13 +92,13 @@ window.XMB_MENU_DATA = {
         title: { en: 'highway design', es: 'diseño de autopista', de: 'autobahnentwurf' },
         desc: { en: 'intersection reconstruction drawing', es: 'plano de reconstrucción de intersección', de: 'zeichnungen zur kreuzungsrekonstruktion' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/H&D043.ico'
+        img: 'icons/hd043.ico'
       },
       {
         title: { en: 'foundations', es: 'cimientos', de: 'fundamente' },
         desc: { en: 'footing and pad concrete calculations', es: 'cálculos de hormigón para zapatas', de: 'berechnungen für betonfundamente' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/CP001.ico'
+        img: 'icons/cp001.ico'
       }
     ],
     '1_1': [
@@ -106,7 +106,7 @@ window.XMB_MENU_DATA = {
         title: { en: 'cad structure', es: 'estructura cad', de: 'cad-struktur' },
         desc: { en: 'steel beam assembly layout', es: 'diseño de ensamblaje de vigas de acero', de: 'stahlträger-montagelayout' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/CP001.ico'
+        img: 'icons/cp001.ico'
       }
     ],
     '1_2': [
@@ -114,7 +114,7 @@ window.XMB_MENU_DATA = {
         title: { en: 'drafting draft', es: 'borrador de dibujo', de: 'zeichenentwurf' },
         desc: { en: 'retaining wall detailed profile', es: 'perfil detallado de muro de contención', de: 'detailliertes profil der stützmauer' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/KB001.ico'
+        img: 'icons/kb001.ico'
       }
     ],
     '2_0': [
@@ -122,13 +122,13 @@ window.XMB_MENU_DATA = {
         title: { en: 'power supply', es: 'fuente de alimentación', de: 'stromversorgung' },
         desc: { en: 'dc-dc stepdown converter schematic', es: 'esquema de convertidor reductor dc-dc', de: 'dc-dc-abwärtswandler-schaltplan' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/CP005.ico'
+        img: 'icons/cp005.ico'
       },
       {
         title: { en: 'mcu breakout', es: 'placa de mcu', de: 'mcu-breakout' },
         desc: { en: 'stm32 board layout & signal traces', es: 'diseño de placa stm32 y pistas de señal', de: 'stm32-platinenlayout & signalspuren' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/App001.ico'
+        img: 'icons/app001.ico'
       }
     ],
     '2_1': [
@@ -136,7 +136,7 @@ window.XMB_MENU_DATA = {
         title: { en: 'smart sensor', es: 'sensor inteligente', de: 'intelligenter sensor' },
         desc: { en: 'ambient temperature sensor prototype', es: 'prototipo de sensor de temperatura ambiente', de: 'prototyp des umgebungstemperatursensors' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/App001.ico'
+        img: 'icons/app001.ico'
       }
     ],
     '2_2': [
@@ -144,7 +144,7 @@ window.XMB_MENU_DATA = {
         title: { en: 'c++ firmware', es: 'firmware c++', de: 'c++ firmware' },
         desc: { en: 'low-level peripheral drivers repo', es: 'repositorio de controladores de periféricos de bajo nivel', de: 'peripherietreiber-repository' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/Clock001.ico'
+        img: 'icons/clock001.ico'
       }
     ],
     '3_0': [
@@ -152,21 +152,21 @@ window.XMB_MENU_DATA = {
         title: { en: 'fluid mechanics', es: 'mecánica de fluidos', de: 'strömungsmechanik' },
         desc: { en: 'coursework & computational lab notes', es: 'notas de laboratorio computacional y tareas', de: 'notizen zum computerlabor' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/Cert001.ico'
+        img: 'icons/cert001.ico'
       },
       {
         title: { en: 'solid state logic', es: 'lógica de estado sólido', de: 'festkörperlogik' },
         desc: { en: 'digital electronics theory course', es: 'curso de teoría de electrónica digital', de: 'theoriekurs für digitale elektronik' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/File001.ico'
+        img: 'icons/file001.ico'
       }
     ],
     '3_1': [
       {
         title: { en: 'cloud developer', es: 'desarrollador cloud', de: 'cloud-entwickler' },
-        desc: { en: 'aws certified developer credentials', es: 'credenciales de desarrollador certificado de aws', de: 'aws-zertifizierter entwickler' },
+        desc: { en: 'aws certified developer credentials', es: 'credenciales de desarrollador certificado de aws', de: 'aws-zertifizierter desarrollador' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/File001.ico'
+        img: 'icons/file001.ico'
       }
     ],
     '3_2': [
@@ -174,7 +174,7 @@ window.XMB_MENU_DATA = {
         title: { en: 'transcripts', es: 'analítico', de: 'zeugnisse' },
         desc: { en: 'engineering curriculum grade sheet', es: 'calificaciones del plan de estudios de ingeniería', de: 'notenblatt des ingenieurstudiums' },
         columns: 2,
-        img: 'icons/windows-vista-icons/Windows Vista Icons/Disc001.ico'
+        img: 'icons/disc001.ico'
       }
     ]
   },
