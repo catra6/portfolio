@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>facundo prosiuk</title>
+  <link rel="icon" href="icons/windows-vista-icons/Windows Vista Icons/Folder202.ico" type="image/x-icon">
+  <meta name="description" content="A PS3/PSP XrossMediaBar (XMB) style portfolio navigation system.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="splash-active">
+
+  <!-- Animated Wave Canvas Background -->
+  <canvas id="wave-canvas"></canvas>
+
+  <!-- PS4 Intro Splash Name -->
+  <div id="splash-name-title" class="splash-name-title">facundo prosiuk</div>
+
+  <!-- Top Status Bar -->
+  <header class="status-bar">
+    <div class="status-left">
+    </div>
+    <div class="status-right">
+      <button id="lang-toggle" class="lang-btn" type="button" tabindex="-1" title="Change Language">
+        <svg class="flag-icon" viewBox="0 0 60 30" width="16" height="11">
+          <clipPath id="uk">
+            <path d="M0,0 v30 h60 v-30 z" />
+          </clipPath>
+          <clipPath id="ukt">
+            <path d="M30,15 h30 v15 z v-30 h-30 z h-30 v-15 z v30 h30 z" />
+          </clipPath>
+          <g clip-path="url(#uk)">
+            <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
+            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+            <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#ukt)" stroke="#C8102E" stroke-width="4" />
+            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+          </g>
+        </svg>
+        <span class="lang-text">EN</span>
+      </button>
+      <button id="audio-toggle" class="audio-btn" type="button" tabindex="-1" title="Toggle Sound FX">
+        <svg id="audio-icon-on" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <path d="M11 5L6 9H2v6h4l5 4V5z" />
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+        </svg>
+        <svg id="audio-icon-off" class="hidden" viewBox="0 0 24 24" width="18" height="18" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <path d="M11 5L6 9H2v6h4l5 4V5z" />
+          <line x1="23" y1="9" x2="17" y2="15" />
+          <line x1="17" y1="9" x2="23" y2="15" />
+        </svg>
+      </button>
+      <span id="clock" class="clock-display">00:00 AM</span>
+    </div>
+  </header>
+
+  <!-- Main XMB Container -->
+  <main class="xmb-viewport">
+    <div class="xmb-stage" id="xmb-stage">
+
+      <!-- Horizontal Navigation Bar -->
+      <div class="horizontal-bar" id="horizontal-bar">
+
+        <!-- Dynamic Category columns are rendered programmatically here -->
+
+        <!-- 6. SUB-ITEMS DRAWER COLUMN (PS3 style, inside horizontal bar) -->
+        <div id="sub-items-column" class="sub-items-column">
+          <div class="sub-items-list" id="sub-items-list">
+            <!-- Dynamically populated sub-items go here -->
+          </div>
+        </div>
+
+        <!-- 7. PROFILE DETAILS SIDE PANEL (inside horizontal bar) -->
+        <div id="profile-detail-panel" class="profile-detail-panel">
+          <!-- Left Track Scrollbar with Gradient & Moving Arrow -->
+          <div class="scroll-track-container">
+            <div id="detail-scroll-gradient" class="scroll-gradient-bar"></div>
+            <div id="detail-scroll-arrow" class="scroll-arrow-indicator">►</div>
+          </div>
+
+          <div class="panel-main-content">
+            <div id="profile-detail-scroll-area" class="profile-detail-scroll-area">
+              <div id="profile-detail-body" class="profile-detail-body">
+                <!-- Dynamically populated title + timeline sections go here -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Controls Helper Footer -->
+  <footer class="controls-hint">
+    <div class="hint-item"><span class="key">←</span><span class="key">→</span> browse category</div>
+    <div class="hint-item"><span class="key">↑</span><span class="key">↓</span> browse folder</div>
+    <div class="hint-item"><span class="key">enter</span> open</div>
+  </footer>
+
+  <!-- Modal / Item Detail Viewer -->
+  <div id="folder-modal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2 id="modal-title">folder name</h2>
+        <button id="modal-close" class="close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="modal-desc">This folder is currently empty.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WebGL 2 PlayStation-3-XMB Wave & Particle Engine -->
+  <script src="xmb-wave/ps3xmbwave/background-gradients-night.js"></script>
+  <script src="xmb-wave/ps3xmbwave/background-gradients-day.js"></script>
+  <script src="xmb-wave/ps3xmbwave/spline-settings.js"></script>
+  <script src="xmb-wave/ps3xmbwave/particles-settings.js"></script>
+
+  <!-- Apply saved configurator settings BEFORE WebGL layers build buffers -->
+  <script>
+    try {
+      var savedSpline = localStorage.getItem('xmb_spline_settings');
+      var savedParticle = localStorage.getItem('xmb_particle_settings');
+      if (savedSpline && window.SPLINE_SETTINGS) Object.assign(window.SPLINE_SETTINGS, JSON.parse(savedSpline));
+      if (savedParticle && window.PARTICLE_SETTINGS) Object.assign(window.PARTICLE_SETTINGS, JSON.parse(savedParticle));
+    } catch (e) { }
+  </script>
+
+  <script src="xmb-wave/ps3xmbwave/spline-reverse.js"></script>
+  <script src="xmb-wave/ps3xmbwave/spline.js"></script>
+  <script src="xmb-wave/ps3xmbwave/particles.js"></script>
+
+  <script src="menu-data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
